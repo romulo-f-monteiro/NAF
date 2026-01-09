@@ -61,16 +61,15 @@
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             
             <!-- LOGO COM LINK -->
-            <!-- DICA: Para usar uma imagem, apague a <div class="bg-gradient..."> e descomente a tag <img> -->
-            <a href="#" class="flex items-center gap-2 font-bold text-2xl tracking-tighter text-blue-700">
+            <a href="#" class="flex items-center gap-2 font-bold text-2xl tracking-tighter">
                 
-                
-
-                <!-- OPÇÃO 2: Imagem (Retire os comentários abaixo e coloque o link da sua imagem) -->
+                <!-- LOGO IMAGEM -->
                 <img src="assets/logo.png" alt="Logo NAF" class="h-20 w-auto">
- 
 
-                <span>NAF</span>
+                <!-- SIGLA NAF EM GRADIENTE (#000000 para #F4B41A) -->
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#000000] to-[#F4B41A]">
+                    NAF
+                </span>
             </a>
 
             <!-- Menu Desktop -->
@@ -156,8 +155,9 @@
 
                         <!-- Núcleo Central -->
                         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-tr from-blue-600 to-cyan-500 p-1 rounded-full shadow-2xl z-10">
-                            <div class="bg-white p-6 rounded-full">
-                                <i data-lucide="brain" class="text-blue-600 w-16 h-16"></i>
+                            <div class="bg-white p-6 rounded-full flex items-center justify-center">
+                                <!-- SUBSTITUÍDO: Ícone brain por logo.png -->
+                                <img src="assets/logo.png" alt="Logo Central" class="w-16 h-16 object-contain">
                             </div>
                         </div>
 
@@ -633,4 +633,3 @@
     </script>
 </body>
 </html>
-
