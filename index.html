@@ -114,7 +114,8 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+    <!-- ALTERADO: pt-32 para pt-44 para dar mais espaço no mobile -->
+    <header class="relative pt-44 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
         <!-- Blobs de Fundo -->
         <div class="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[600px] h-[600px] bg-cyan-200/30 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
         <div class="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[600px] h-[600px] bg-blue-200/30 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
@@ -149,15 +150,16 @@
                 <div class="lg:w-1/2 w-full flex justify-center relative mt-10 lg:mt-0">
                     <div class="relative w-[340px] h-[340px] md:w-[450px] md:h-[450px]" id="hero-illustration">
                         
-                        <!-- Linhas de Órbita (Estáticas agora, removido animate-spin) -->
+                        <!-- Linhas de Órbita -->
                         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full border border-dashed border-blue-200 rounded-full -z-10 opacity-60"></div>
                         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] h-[70%] border border-dotted border-cyan-200 rounded-full -z-10 opacity-60"></div>
 
                         <!-- Núcleo Central -->
                         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-tr from-blue-600 to-cyan-500 p-1 rounded-full shadow-2xl z-10">
-                            <div class="bg-white p-6 rounded-full flex items-center justify-center">
-                                <!-- SUBSTITUÍDO: Ícone brain por logo.png -->
-                                <img src="assets/logo.png" alt="Logo Central" class="w-16 h-16 object-contain">
+                            <div class="bg-white p-4 rounded-full flex items-center justify-center">
+                                <!-- LOGO CENTRAL (Cérebro da animação) -->
+                                <!-- ALTERADO: w-16 h-16 para w-28 h-28 para ficar maior -->
+                                <img src="assets/logo.png" alt="Logo Central" class="w-28 h-28 object-contain">
                             </div>
                         </div>
 
@@ -196,7 +198,6 @@
                     <p class="text-slate-500 text-sm leading-relaxed">Vídeo-aulas didáticas sobre fisiologia, biomecânica e dietética.</p>
                 </div>
 
-                <!-- ALTERADO: Artigos Científicos -> Planejador Dietético -->
                 <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1 border border-slate-100 group">
                     <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                         <i data-lucide="smartphone" class="w-6 h-6"></i>
@@ -205,7 +206,6 @@
                     <p class="text-slate-500 text-sm leading-relaxed">Site/app grátis para você calcular a dieta do seu paciente de forma simples.</p>
                 </div>
 
-                <!-- ALTERADO: Descrição Nutrição -->
                 <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1 border border-slate-100 group">
                     <div class="w-12 h-12 rounded-xl bg-green-100 text-green-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                         <i data-lucide="apple" class="w-6 h-6"></i>
@@ -238,7 +238,6 @@
                     <p class="text-slate-500 text-sm leading-relaxed">Poupe tempo com sínteses objetivas dos principais papers.</p>
                 </div>
 
-                <!-- ALTERADO: Descrição Revistas -->
                 <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1 border border-slate-100 group">
                     <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                         <i data-lucide="book-open" class="w-6 h-6"></i>
@@ -247,7 +246,6 @@
                     <p class="text-slate-500 text-sm leading-relaxed">Conheça as revistas científicas e bases de dados da área.</p>
                 </div>
 
-                <!-- ALTERADO: Calculadora de Dieta -> Ferramentas -->
                 <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1 border border-slate-100 group">
                     <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                         <i data-lucide="layout-grid" class="w-6 h-6"></i>
@@ -290,7 +288,6 @@
                         <i data-lucide="microscope" class="w-8 h-8 opacity-80"></i>
                         <span class="font-bold text-xl">Prática Baseada em Evidência</span>
                     </div>
-                    <!-- ALTERADO: Comunidade Forte -> Atualização Constante -->
                     <div class="bg-slate-800 rounded-2xl p-6 text-white h-48 flex flex-col justify-between shadow-xl transform translate-y-8">
                         <i data-lucide="trending-up" class="w-8 h-8 opacity-80"></i>
                         <span class="font-bold text-xl">Atualização Constante</span>
@@ -435,7 +432,6 @@
                 <!-- App Download (SEM IMAGENS, APENAS BOTÕES/TEXTO) -->
                 <div>
                     <h3 class="font-bold text-slate-900 mb-4">Baixe o App</h3>
-                    <!-- TEXTO ALTERADO -->
                     <p class="text-sm text-slate-500 mb-4">Já é cliente? Clique para baixar.</p>
                     <div class="flex flex-col gap-3">
                         <!-- LINK APP STORE -->
@@ -468,34 +464,6 @@
         </div>
     </footer>
 
-    <!-- Chat Bot Button -->
-    <div class="fixed bottom-6 right-6 z-50">
-        <button onclick="toggleChat()" class="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg transition-transform hover:scale-110 flex items-center gap-2">
-            <i data-lucide="sparkles" class="w-6 h-6"></i>
-            <span class="font-bold hidden md:inline">Tirar dúvida com IA</span>
-        </button>
-    </div>
-
-    <!-- Chat Bot Modal -->
-    <div id="chat-modal" class="hidden fixed bottom-24 right-6 w-80 md:w-96 bg-white rounded-2xl shadow-2xl border border-slate-200 z-50 overflow-hidden flex flex-col max-h-[500px]">
-        <div class="bg-gradient-to-r from-blue-600 to-cyan-500 p-4 flex justify-between items-center text-white">
-            <div class="flex items-center gap-2">
-                <i data-lucide="brain" class="w-5 h-5"></i>
-                <span class="font-bold">Assistente NAF</span>
-            </div>
-            <button onclick="toggleChat()" class="hover:bg-white/20 rounded p-1"><i data-lucide="x" class="w-5 h-5"></i></button>
-        </div>
-        <div class="p-4 overflow-y-auto flex-1 bg-slate-50 min-h-[300px]" id="chat-content">
-            <div class="bg-blue-100 text-blue-800 p-3 rounded-lg rounded-tl-none mb-3 text-sm">
-                Olá! Sou a IA do NAF. Posso tirar dúvidas científicas sobre nutrição e treino. O que você quer saber?
-            </div>
-        </div>
-        <form onsubmit="handleAskAI(event)" class="p-3 border-t border-slate-100 bg-white flex gap-2">
-            <input type="text" id="ai-input" placeholder="Ex: Creatina retém líquido?" class="flex-1 border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-500">
-            <button type="submit" class="bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700"><i data-lucide="send" class="w-4 h-4"></i></button>
-        </form>
-    </div>
-
     <!-- Javascript Principal -->
     <script>
         // Inicializa ícones
@@ -512,74 +480,6 @@
         function scrollToPlans() {
             document.getElementById('planos').scrollIntoView({ behavior: 'smooth' });
             document.getElementById('mobile-menu').classList.add('hidden');
-        }
-
-        // IA Chat Logic
-        function toggleChat() {
-            const modal = document.getElementById('chat-modal');
-            modal.classList.toggle('hidden');
-            if(!modal.classList.contains('hidden')) {
-                document.getElementById('ai-input').focus();
-            }
-        }
-
-        async function handleAskAI(e) {
-            e.preventDefault();
-            const input = document.getElementById('ai-input');
-            const content = document.getElementById('chat-content');
-            const query = input.value.trim();
-
-            if (!query) return;
-
-            // Adiciona msg do usuário
-            content.innerHTML += `<div class="bg-white border border-slate-200 text-slate-700 p-3 rounded-lg rounded-tr-none mb-3 text-sm ml-auto max-w-[80%]">${query}</div>`;
-            content.scrollTop = content.scrollHeight;
-            input.value = '';
-
-            // Loading
-            const loadingId = 'loading-' + Date.now();
-            content.innerHTML += `<div id="${loadingId}" class="text-slate-400 text-xs mb-3">Digitando...</div>`;
-
-            // Simulação ou Chamada Real (Configurar API Key abaixo se for usar)
-            try {
-                // ATENÇÃO: Para usar em produção, o ideal é ter um backend. 
-                // Colocar API Key aqui expõe ela para qualquer um que ver o código fonte ("Inspecionar Elemento").
-                // Deixei configurado para usar a chamada, mas você precisa inserir a chave.
-                
-                const apiKey = ""; // <--- INSIRA SUA API KEY AQUI SE FOR TESTAR LOCALMENTE
-
-                let textResponse = "";
-
-                if(apiKey) {
-                    const systemPrompt = "Você é o assistente virtual sênior da plataforma NAF. Responda dúvidas sobre saúde, nutrição e treino com base científica. Seja curto (max 3 frases).";
-                    
-                    const response = await fetch(
-                        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`,
-                        {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({
-                                contents: [{ parts: [{ text: query }] }],
-                                systemInstruction: { parts: [{ text: systemPrompt }] }
-                            }),
-                        }
-                    );
-                    const data = await response.json();
-                    textResponse = data.candidates?.[0]?.content?.parts?.[0]?.text || "Erro ao processar.";
-                } else {
-                    // Resposta Simulada para quando não tiver API Key configurada
-                    await new Promise(r => setTimeout(r, 1500)); // Delay fake
-                    textResponse = "Para obter respostas reais da IA, você precisa configurar a API Key no código. Como segurança, a chave não vem preenchida por padrão.";
-                }
-
-                document.getElementById(loadingId).remove();
-                content.innerHTML += `<div class="bg-blue-100 text-blue-800 p-3 rounded-lg rounded-tl-none mb-3 text-sm">${textResponse}</div>`;
-                
-            } catch (error) {
-                document.getElementById(loadingId).remove();
-                content.innerHTML += `<div class="bg-red-100 text-red-800 p-3 rounded-lg rounded-tl-none mb-3 text-sm">Erro de conexão.</div>`;
-            }
-            content.scrollTop = content.scrollHeight;
         }
 
         // Lógica dos Ícones Flutuantes Simétricos
